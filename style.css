@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("gilroy-bold/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.container {
+    width: 96%;
+    max-width: 1200px;
+    min-height: 600px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.login {
+    width: 40%;
+    padding: 200px 4%;
+    background: #06235f;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    background: #123575;
+}
+
+.input-box input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    color: white;
+    background: transparent;
+    font-size: 12px;
+}
+
+.input-box input::placeholder {
+    color: #b5c5e5;
+}
+
+.eye {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.forgot {
+    display: block;
+    margin: 12px 0 30px;
+    text-align: right;
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.signin,
+.social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px;
+    margin: 5px 0;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.signin {
+    background: #2455bd;
+}
+
+.social {
+    background: #123575;
+    font-size: 12px;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+    color: #c5d0e8;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #425987;
+}
+
+.signup {
+    margin-top: 18px;
+    font-size: 11px;
+    color: #b5c5e5;
+}
+
+.signup a {
+    color: #638ee9;
+    text-decoration: none;
+}
+
+.picture {
+    width: 60%;
+    background: url(7853a384128734e29dde9d46a5cb14984fe7265f.jpg) center / cover no-repeat;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 95%;
+        min-height: auto;
+    }
+
+    .login {
+        width: 100%;
+        padding: 40px 8%;
+    }
+
+    .picture {
+        display: none;
+    }
+}
